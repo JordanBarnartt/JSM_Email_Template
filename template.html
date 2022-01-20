@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Library JSM Template</title>
+        <link rel="stylesheet" href="template.css">
+
+        <!-- Get Barlow Condensed font from Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+        <!---->
+
+    </head>
+    <body>
+        <!-- Due to how Outlook handles body width, it is necessary to enclose the contents of the message in a table and restrict the width of the row: https://stackoverflow.com/questions/47811703/is-there-a-way-to-fix-the-html-email-width-on-outlook-2016 -->
+        <table id="wrapper_table">
+            <tr>
+                <td>
+                    <p class="other_messaging">Reply above this line</p>
+    
+                    <p id="title">Library request update</p>
+            
+                    <p id="message_content">${message.content}</p>
+            
+                    <p class="other_messaging">Request shared with ${request.sharedwith}.</p>
+            
+                    <!-- Outlook does not render <hr> as expected, so workaround is required: https://stackoverflow.com/questions/10206252/html-emails-hr-styling-issue -->
+                    <hr id="separator">
+                    
+                    <!-- Outlook doesn't work with the standard clearfix, so a table must be used for putting <p>s side-by-side -->
+                    <table id="link_table">
+                        <tr>
+                            <td id="request_history_cell">
+                                <p id="request_history_link"><a href="${request.url}">View request history</a></p>
+                            </td>
+                            <td id=request_turn_off_notifications_cell>
+                                <p id="request_turn_off_notifications_link"><a href="${request.disable.notifications.url}">Turn off request notifications</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="kb_image" src="https://lib.uwaterloo.ca/images/ICONS-2021_LEARNING-SPEED.png">
+                            </td>
+                            <td>
+                                <p>Browse the <a href="https://uwaterloo.atlassian.net/wiki/spaces/LIBLTKB/overview">Library Technology Knowledge Base</a> for how-to articles, troubleshooting, and more!</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

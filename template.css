@@ -1,0 +1,94 @@
+/*
+body {
+    width: 450px;
+    height: 667px;
+    padding: 40px;
+}
+*/
+
+table#wrapper_table {
+    width: 100%;
+    margin: 0 0;
+    max-width: 450px;
+    padding: 0;
+}
+
+/*
+td#wrapper_td {
+    width: 450px;
+    height: 667px;
+    padding: 40px;
+}
+*/
+
+p {
+    font-size: 12pt;
+    font-family: Verdana, sans-serif;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: rgb(0,54,255);
+}
+
+p#title {
+    font-size: 26pt;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+}
+
+p#message_content {
+    font-size: 16pt;
+    font-family: Verdana, sans-serif;
+}
+
+p.other_messaging {
+    color: rgb(155,155,155);
+}
+
+hr#separator {
+    height: 3px;
+    border: 0 none;
+    color: rgb(251,174,23);
+    background-color: rgb(251,174,23);
+}
+
+table#link_table {
+    width: 100%;
+    padding-top: 1em;
+}
+
+td#request_history_cell {
+    width: 40%;
+}
+
+p#request_history_link {
+    float: left;
+    width: 100%;
+}
+
+td#request_turn_off_notifications_cell {
+    width: 60%;
+}
+
+p#request_turn_off_notifications_link {
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+
+div#kb_footer {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+img#kb_image {
+    float: left;
+    width: 150px;
+    height: auto;
+    clear: left;
+}
