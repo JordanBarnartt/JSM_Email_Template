@@ -3,8 +3,6 @@ table#wrapper_table {
     margin: 0 0;
     max-width: 450px;
     padding: 0;
-    border-collapse: collapse;
-    border: none;
 }
 
 p {
